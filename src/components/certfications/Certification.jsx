@@ -1,0 +1,61 @@
+import { certificateData } from ".";
+import gsap from "gsap";
+import { useRef } from "react";
+import { useIntersection } from "react-use";
+import CertificateItem from "./CertificateItem";
+
+const Certification = () => {
+  const sectionRef = useRef(null);
+  // const sectionRef = document.querySelector("")
+
+  const intersection = useIntersection(sectionRef, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.2,
+  });
+
+  const fadeIn = (element) => {
+    gsap.to(element, {
+      duration: 1,
+      opacity: 1,
+      y: -60,
+      ease: "power2",
+      stagger: {
+        amount: 2,
+      },
+    });
+  };
+
+  const fadeOut = (element) => {
+    gsap.to(element, {
+      duration: 1,
+      opacity: 0,
+      y: -20,
+      ease: "power2",
+    });
+  };
+
+  intersection && intersection.intersectionRatio < 0.2
+    ? fadeOut(sectionRef.current)
+    : fadeIn(sectionRef.current);
+
+  return (
+    <section data-scroll-section className="max-w-md my-10 mb-80" ref={sectionRef}>
+      <h2 className="text-[12px] mb-5">
+        Certificate / <br /> Award
+      </h2>
+
+      <div className="flex flex-col border border-x-0 border-y-[#414141]">
+        {certificateData.map((certificate , i) => (
+          <CertificateItem
+            key={i}
+            certificate={certificate}
+            certificateLength={certificateData.length}
+          />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Certification;
