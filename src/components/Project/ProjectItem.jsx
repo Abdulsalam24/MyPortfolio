@@ -55,13 +55,18 @@ const ProjectItem = ({ project, projectLength }) => {
         <div ref={sectionRef} className="secound">
           <div className="inner relative top-[60px]">
             <h3
-              className="text-[70px] leading-[1.2em] break-words tracking-[-0.05em] md:text-[90px] md:break-normal"
+              className="text-[70px] leading-[1.2em] break-words tracking-[-0.05em] md:text-[90px] md:break-normal
+              whitespace-nowrap
+              "
               id="projectName"
             >
-              <a href="" className="pointer-events-none md:pointer-events-auto">
+              <a href={project.link} className="pointer-events-none md:pointer-events-auto" target="_blank" rel="noreferrer">
                 {project.title} - {project.description}
               </a>
             </h3>
+
+
+
             <div className="text-right mt-5">
               <a href={project.link} className="text-right">
                 <button className="py-2 px-3 border border-[#777777] rounded-[44px] uppercase md:hidden">
@@ -71,7 +76,10 @@ const ProjectItem = ({ project, projectLength }) => {
               </a>
             </div>
           </div>
+
+
         </div>
+
       </div>
     </div>
   );

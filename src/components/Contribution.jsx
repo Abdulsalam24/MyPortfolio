@@ -2,8 +2,6 @@ import gsap from "gsap";
 import { useRef } from "react";
 import { useIntersection } from "react-use";
 
-
-
 const Contribution = () => {
   const sectionRef = useRef(null);
 
@@ -44,12 +42,12 @@ const Contribution = () => {
         <h4 className="text-[12px]">COMMUNITY CONTRIBUTIONS</h4>
 
         <p className="text-3xl text-[#aaa] md:mt-5">
-          I have worked on some resources and tools; mostly for designers and
-          developers like myself, you should checkout
+          I participated in a hackaton competition for solving problems in government.
+          I and the team worked and still working on tracking corespondece app for tracking school record. <br /> I also freelanced with a team to build product selling website.
         </p>
       </div>
     </section>
   );
-};
+}; 
 
 export default Contribution;

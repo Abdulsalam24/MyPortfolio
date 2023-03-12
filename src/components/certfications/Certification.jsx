@@ -40,7 +40,7 @@ const Certification = () => {
     : fadeIn(sectionRef.current);
 
   return (
-    <section data-scroll-section className="max-w-md my-10 mb-80" ref={sectionRef}>
+    <section data-scroll-section className="max-w-md my-10 mb-[100px]" ref={sectionRef}>
       <h2 className="text-[12px] mb-5">
         Certificate / <br /> Award
       </h2>

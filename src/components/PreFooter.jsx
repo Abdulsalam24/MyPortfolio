@@ -1,6 +1,6 @@
 const PreFooter = () => {
   return (
-    <section data-scroll-section>
+    <section data-scroll-section id="contact">
       <div className="max-w-md mx-auto text-center border-0 mb-20">
         <p>
           Got a question, proposal or project or want to work together on
@@ -19,6 +19,8 @@ const PreFooter = () => {
           </h3>
         </div>
       </div>
+
+      
     </section>
   );
 };
