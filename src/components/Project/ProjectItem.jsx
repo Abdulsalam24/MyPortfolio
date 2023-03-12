@@ -40,7 +40,6 @@ const ProjectItem = ({ project, projectLength }) => {
   return (
     <div className="project overflow-x-scroll md:break-normal">
       <div className="flex flex-col gap-5 border border-t-5-[#777] border-b-0 border-l-0 border-r-0 py-5 tracking-tighter">
-
         <div className="flex justify-between capitalize">
           {project.id === 1 ? (
             <span>
@@ -60,12 +59,15 @@ const ProjectItem = ({ project, projectLength }) => {
               "
               id="projectName"
             >
-              <a href={project.link} className="pointer-events-none md:pointer-events-auto" target="_blank" rel="noreferrer">
+              <a
+                href={project.link}
+                className="pointer-events-none md:pointer-events-auto"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {project.title} - {project.description}
               </a>
             </h3>
-
-
 
             <div className="text-right mt-5">
               <a href={project.link} className="text-right">
@@ -76,10 +78,7 @@ const ProjectItem = ({ project, projectLength }) => {
               </a>
             </div>
           </div>
-
-
         </div>
-
       </div>
     </div>
   );
