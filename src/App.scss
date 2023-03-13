@@ -3,7 +3,12 @@ body {
   color: #777777;
   font-family: sans-serif;
 }
-// #555555 - color
+* {
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
 
 ::-webkit-scrollbar {
   display: none;
@@ -11,7 +16,6 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: rgb(252, 0, 0);
 }
 
 span {
@@ -20,7 +24,7 @@ span {
 
 h1,
 h3 {
-  font-family: "Bebas Neue", cursive !important;
+  font-family: cursive !important;
 }
 
 #myText {
@@ -42,31 +46,26 @@ h3 {
   overflow: hidden;
 }
 
-nav .nav span , nav .nav .btn-contact{
+nav .nav span,
+nav .nav .btn-contact {
   opacity: 0;
   transform: translate(0px, -400px);
-
 }
 
-// #projectName {
-//   outline: solid red;
-//   // opacity: 0;
-//   > div {
-//     transform: translate(0);
-//     outline: solid red;
-//     // opacity: 0;
-//   }
-//   &.is-reveal {
-//     outline: solid rgb(255, 255, 255);
-
-//     opacity: 1;
-//   }
-// }
-
-.marquee {
-  animation: marquee 30s linear infinite;
+button {
   &:hover {
-    animation-play-state: paused;
+    background-color: rgb(49, 49, 49);
+  }
+}
+
+.lineScroll {
+  .marquee {
+    animation: marquee 20s linear infinite;
+  }
+  &:hover {
+    .marquee {
+      animation-play-state: paused;
+    }
   }
 }
 
@@ -79,7 +78,6 @@ nav .nav span , nav .nav .btn-contact{
   }
 }
 
-/*! locomotive-scroll v3.1.7 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 html.has-scroll-smooth {
   overflow: hidden;
 }
@@ -130,4 +128,41 @@ html.has-scroll-dragging * {
 
 html {
   scroll-behavior: smooth;
+}
+
+.inner {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background: linear-gradient(to right, #777777, #91241f 50%, #777777 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 2s ease-in-out;
+  text-decoration: none;
+  &:hover {
+    background-position: 0 100%;
+  }
+}
+
+.lineScroll {
+  .inner-footer {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background: linear-gradient(#777, #777 50%, #0f0f0f 50%, #ffffff);
+    background-size: 100% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 0.5s ease-in-out;
+    text-decoration: none;
+  }
+  &:hover {
+    .inner-footer {
+      background-position: 100% 100%;
+    }
+  }
 }

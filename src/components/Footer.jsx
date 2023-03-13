@@ -5,10 +5,11 @@ const Footer = () => {
     <footer data-scroll-section className="break-words py-10" id="contact">
       <div className="flex flex-col gap-4 max-w-[230px] ml-auto md:max-w-full md:gap-20">
         <p className="text-2xl text-[#aaa] md:text-center">
-          <a href="mailto:abdulsalammohammed586685@gmail.com"> abdulsalammohammed586685@gmail.com</a>
+          <a href="mailto:abdulsalammohammed586685@gmail.com">
+            {" "}
+            abdulsalammohammed586685@gmail.com
+          </a>
         </p>
-
-
 
         <Social visible="md:hidden" />
 
@@ -21,9 +22,7 @@ const Footer = () => {
 
           <p className="md:w-[25%] text-right">
             <span className="text-base text-[#aaa]">Designed by </span>
-            <u>
               <a href="https://www.fayemi.design/">Isaac Fayemi</a>
-            </u>
           </p>
         </div>
       </div>

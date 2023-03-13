@@ -42,12 +42,14 @@ const Contribution = () => {
         <h4 className="text-[12px]">COMMUNITY CONTRIBUTIONS</h4>
 
         <p className="text-3xl text-[#aaa] md:mt-5">
-          I participated in a hackaton competition for solving problems in government.
-          I and the team worked and still working on tracking corespondece app for tracking school record. <br /> I also freelanced with a team to build product selling website.
+          I participated in a hackathon competition to solve government
+          problems. My team and I worked on, and are still working on, a tracking correspondence software for school records.<br /> I also
+          worked as a freelancer with a team to create a product selling
+          website.
         </p>
       </div>
     </section>
   );
-}; 
+};
 
 export default Contribution;

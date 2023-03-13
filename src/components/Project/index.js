@@ -1,8 +1,8 @@
 export const projectData = [
   {
     id: 1,
-    description: "Movie App",
-    title: "Movie",
+    description: "Movies",
+    title: "Movie App",
     tools: "React, scss, Html",
     link: "https://movieappabd.netlify.app/",
   }
@@ -16,14 +16,14 @@ export const projectData = [
   },
   {
     id: 2,
-    description: "Musical challenge",
-    title: "Music",
+    description: "Musical",
+    title: "Music App",
     tools: "React Tailwind Html",
     link: "https://music-play-psi.vercel.app",
   },
   {
     id: 3,
-    description: "Github",
+    description: "Github Finder",
     title: "Github",
     tools: "React Tailwind Html",
     link: "https://github-finderabd.netlify.app/",

@@ -3,7 +3,6 @@ import gsap from "gsap";
 import SplitType from "split-type";
 
 const Header = () => {
-
   useEffect(() => {
     const split = new SplitType("#header-text", {
       types: "lines",
@@ -25,7 +24,6 @@ const Header = () => {
 
     window.addEventListener("load", init());
   }, []);
-  
 
   return (
     <header data-scroll-section>
@@ -34,7 +32,7 @@ const Header = () => {
           <div className="parentline flex flex-wrap items-center justify-between">
             <p id="header-text">front</p>
             <p id="header-text" className="m-0 p-0 tracking-[-0.20em] mr-1">
-              ——
+              —— 
             </p>
             <p id="header-text">end</p>
           </div>
@@ -52,7 +50,19 @@ const Header = () => {
               id="header-text"
             >
               <p className="text-[#aaa] font-medium">
-                <span className="text-[#777] mr-2 uppercase">About </span> I am a Frontend Developer with 3 years of experience creating user interfaces with clean, reusable code using React. I create a web application with the most recent tools and have prior experience working in a team. I am constantly striving to build and advance a project as quickly as possible. When I'm working on a project, I'm eager and passionate about making sure you're completely satisfied with the service I provide.
+                <span className="text-[#777] mr-2 uppercase">About </span> I am
+                a Frontend Developer with 3 years of experience creating user
+                interfaces with clean, reusable code using React. I create a web
+                application with the most recent tools and have prior experience
+                working in a team. I am constantly striving to build and advance
+                a project as quickly as possible. When I'm working on a project,
+                I'm eager and passionate about making sure you're completely
+                satisfied with the service I provide.
+                <br />
+                <br />
+
+                Tools : Html, Css | Scss | Tailwind | Styled component, Javascript, React.js,
+                Next.js, Typescript.
               </p>
             </div>
           </div>

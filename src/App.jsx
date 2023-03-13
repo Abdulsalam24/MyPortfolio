@@ -27,9 +27,9 @@ function App() {
     }
   });
   
-  // if (isLoading) {
-  //   return <Loader />;
-  // }
+  if (isLoading) {
+    return <Loader />;
+  }
 
   return (
     <div data-scroll-container className="App">
