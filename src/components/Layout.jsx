@@ -3,7 +3,7 @@ import Nav from "./nav/Nav";
 
 const Layout = ({ children }) => {
   return (
-    <div className="w-[95%] mx-auto max-w-[1250px]">
+    <div className="w-[95%] mx-auto max-w-[1200px]">
       <Nav />
       {children}
       <Footer />
