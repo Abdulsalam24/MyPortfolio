@@ -69,10 +69,11 @@ const ProjectItem = ({ project, projectLength }) => {
               
               </h3>
               <div className="text-right mt-5">
-                <a href={project.link} className="text-right">
+                <a href={project.link} className="text-right pointer-events-auto"    target="_blank"
+            rel="noreferrer">
                   
                   <button className="py-2 px-3 border border-[#777777] rounded-[44px] uppercase md:hidden">
-                    <span className="text-base text-[#aaa]">visit site</span>{" "}
+                    <span className="text-base ">visit site</span>{" "}
                     <BsArrowUpRight className="inline" />
                   </button>
 

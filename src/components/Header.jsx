@@ -29,6 +29,7 @@ const Header = () => {
   return (
     <header data-scroll-section>
       <div>
+        
         <h1 className="text-[25vw] tracking-tighter capitalize break-words leading-[0.9em] mt-5">
           <div className="parentline flex flex-wrap items-center justify-between">
             <p id="header-text" className="front">
@@ -72,6 +73,7 @@ const Header = () => {
             </div>
           </div>
         </h1>
+
       </div>
       <div className="scrollDown">
         <a href="#project" className="flex items-center flex-col">
