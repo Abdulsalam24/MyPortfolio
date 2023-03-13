@@ -19,9 +19,6 @@ const ProjectItem = ({ project, projectLength }) => {
       opacity: 1,
       y: -60,
       ease: "power2",
-      // stagger: {
-      //   amount: 0.3,
-      // },
     });
   };
 
@@ -29,14 +26,17 @@ const ProjectItem = ({ project, projectLength }) => {
     gsap.to(element, {
       duration: 1,
       opacity: 0,
-      y: -20,
+      y: 0,
       ease: "power2",
     });
   };
 
-  intersection && intersection.intersectionRatio < 0.2
-    ? fadeOut(sectionRef.current)
-    : fadeIn(sectionRef.current);
+  useEffect(() => {
+      intersection && intersection.intersectionRatio < 0.2
+        ? fadeOut(sectionRef.current)
+        : fadeIn(sectionRef.current);
+  },[intersection])
+
 
   return (
     <div className="project overflow-x-scroll md:break-normal">

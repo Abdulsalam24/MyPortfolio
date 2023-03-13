@@ -1,12 +1,54 @@
 body {
   background-color: #111111;
-  color: #777777;
-  font-family: sans-serif;
+  font-family: "paragraph";
+  color: #777;
 }
+
+.front,
+.end,
+.dash,
+.dev {
+  font-family: "MyFont", sans-serif;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("./assets/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: "paragraph";
+  src: url("./assets/fonts/Fonts/OpenSauceOne-Medium.ttf");
+}
+
 * {
   &::before,
   &::after {
     box-sizing: border-box;
+  }
+}
+
+.scrollDown {
+  a {
+    width: 60px;
+    margin: auto;
+    height: 30px;
+    overflow: hidden;
+    svg {
+      animation: scroll 0.9s infinite ease-out;
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(20px);
   }
 }
 
@@ -19,12 +61,7 @@ body {
 }
 
 span {
-  font-size: 12px;
-}
-
-h1,
-h3 {
-  font-family: cursive !important;
+  font-size: 10px;
 }
 
 #myText {
@@ -134,16 +171,17 @@ html {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  background: linear-gradient(to right, #777777, #91241f 50%, #777777 50%);
+  background: linear-gradient(#777, #ffffff 50%, #0f0f0f 50%, #ffffff);
+  background-size: 100% 200%;
+  background-position: 100% 100%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-size: 200% 100%;
-  background-position: 100%;
-  transition: background-position 2s ease-in-out;
+  transition: background-position 1s ease-in-out;
+  transition-delay: 0.3s;
   text-decoration: none;
   &:hover {
-    background-position: 0 100%;
+    background-position: 100% 0%;
   }
 }
 

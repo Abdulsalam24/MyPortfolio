@@ -1,6 +1,6 @@
 const PreFooter = () => {
   return (
-    <section data-scroll-section id="contact">
+    <section data-scroll-section>
       <div className="max-w-md mx-auto text-center border-0 mb-20">
         <p>
         If you have any inquiries, suggestions, or collaboration opportunities, please don't hesitate to contact me.

@@ -5,19 +5,6 @@ import Button from "../Button";
 import cv from "./Abdulsalam resume.pdf";
 
 const Nav = () => {
-  // useEffect(() => {
-  //   new SplitType("#myText")
-  //     const animation = gsap.to('.char',{
-  //       y:0,
-  //       stagger:0.05,
-  //       delay:0.5,
-  //       duration:.1,
-  //       ease:"elastic",
-  //     })
-
-  //     return () => animation.kill();
-  //   }, [])
-
   let tl = new gsap.timeline();
   let ease = Power3.easeOut;
 
@@ -37,7 +24,7 @@ const Nav = () => {
 
   return (
     <nav data-scroll-section>
-      <div className="nav flex flex-col py-5 gap-3 justify-between font-medium w-full md:flex-row md:items-center">
+      <div className="nav flex flex-col py-2 gap-3 justify-between font-medium w-full md:flex-row md:items-center">
         <div className="flex justify-between text-[#aaa] md:w-[30%]">
           <span ref={logo} className="translate-x-0 translate-y-[-200px]">
             ABDULSALAM <br /> MOHAMMED
