@@ -37,7 +37,7 @@ const Contribution = () => {
     : fadeIn(sectionRef.current);
 
   return (
-    <section data-scroll-section className="max-w-md mx-auto md:text-center">
+    <section data-scroll-section className="max-w-lg mx-auto md:text-center">
       <div ref={sectionRef} className="pt-24 pb-16 relative top-[60px]">
         <h4 className="text-[12px]">COMMUNITY CONTRIBUTIONS</h4>
 

@@ -54,10 +54,10 @@ const Header = () => {
             </parent>
 
             <div
-              className="text-base tracking-normal pl-10 max-w-[400px] ml-auto md:ml-0 md:pl-0 md:max-w-[450px] lg:max-w-[420px]"
+              className="text-base tracking-normal pl-10 max-w-[400px] ml-auto md:ml-0 md:pl-0 md:max-w-[550px] md:text-center"
               id="header-text"
             >
-              <p className="about text-[#aaa] font-medium text-sm md:leading-[1.5em] md:text-lg lg:text-base">
+              <p className="about text-[#aaa] font-medium text-sm md:leading-[1.5em] md:text-lg lg:text-lg">
                 <span className="text-[#777] mr-2 uppercase">About </span>My
                 name is Abdulsalam Mohammed, I am a front-end developer with 2+
                 years of experience writing clean and reusable code with most
