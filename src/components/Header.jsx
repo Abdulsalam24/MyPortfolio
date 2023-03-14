@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <header data-scroll-section className="mb-7 md:mb-0">
       <div>
-        <h1 className="text-[25vw] tracking-tighter capitalize break-words leading-[0.85em] mt-5 lg:text-[300px]">
+        <h1 className="text-[25vw] tracking-tighter capitalize break-words leading-[0.85em] mt-5">
           <div className="parentline flex flex-wrap items-center justify-between">
             <p id="header-text" className="front">
               front
@@ -48,7 +48,7 @@ const Header = () => {
           <div className="parentline flex flex-col gap-10 md:items-center md:justify-between md:gap-5">
             <parent
               id="header-text"
-              className="dev tracking-tighter capitalize break-words text-[25vw] sm:text-[20vw] lg:text-[220px]"
+              className="dev tracking-tighter capitalize break-words text-[25vw] sm:text-[20vw]"
             >
               developer
             </parent>
