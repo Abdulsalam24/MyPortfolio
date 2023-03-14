@@ -61,7 +61,7 @@ const ProjectItem = ({ project, projectLength }) => {
           >
             <div className="inner w-full relative top-[60px]">
               <h3
-                className="text-[70px] leading-[1.2em] break-words tracking-[-0.05em] md:text-[90px] md:break-normal md:whitespace-nowrap textwrapper"
+                className="text-[12vw] leading-[1.2em] break-words tracking-[-0.05em] md:break-normal md:whitespace-nowrap textwrapper"
                 id="projectName"
               >
 

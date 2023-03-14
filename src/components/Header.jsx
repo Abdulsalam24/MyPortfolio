@@ -45,7 +45,7 @@ const Header = () => {
             </p>
           </div>
 
-          <div className="parentline flex flex-col gap-10 md:items-center md:justify-between md:gap-5 lg:flex-row">
+          <div className="parentline flex flex-col gap-10 md:items-center md:justify-between md:gap-5">
             <parent
               id="header-text"
               className="dev tracking-tighter capitalize break-words text-[25vw] sm:text-[20vw] lg:text-[220px]"
