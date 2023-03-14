@@ -27,10 +27,9 @@ const Header = () => {
   }, []);
 
   return (
-    <header data-scroll-section>
+    <header data-scroll-section className="mb-7 md:mb-0">
       <div>
-        
-        <h1 className="text-[25vw] tracking-tighter capitalize break-words leading-[0.9em] mt-5">
+        <h1 className="text-[25vw] tracking-tighter capitalize break-words leading-[0.85em] mt-5 lg:text-[300px]">
           <div className="parentline flex flex-wrap items-center justify-between">
             <p id="header-text" className="front">
               front
@@ -46,19 +45,19 @@ const Header = () => {
             </p>
           </div>
 
-          <div className="parentline flex flex-col gap-10 md:flex-row md:items-center md:justify-between">
+          <div className="parentline flex flex-col gap-10 md:items-center md:justify-between md:gap-5 lg:flex-row">
             <parent
               id="header-text"
-              className="dev tracking-tighter capitalize break-words text-[25vw] sm:text-[20vw]"
+              className="dev tracking-tighter capitalize break-words text-[25vw] sm:text-[20vw] lg:text-[220px]"
             >
               developer
             </parent>
 
             <div
-              className="text-base tracking-normal pl-10 max-w-[400px] ml-auto md:ml-0 md:pl-0 md:max-w-[500px]"
+              className="text-base tracking-normal pl-10 max-w-[400px] ml-auto md:ml-0 md:pl-0 md:max-w-[450px] lg:max-w-[420px]"
               id="header-text"
             >
-              <p className="about text-[#aaa] font-medium text-sm leading-4">
+              <p className="about text-[#aaa] font-medium text-sm md:leading-[1.5em] md:text-lg lg:text-base">
                 <span className="text-[#777] mr-2 uppercase">About </span>My
                 name is Abdulsalam Mohammed, I am a front-end developer with 2+
                 years of experience writing clean and reusable code with most
@@ -73,9 +72,8 @@ const Header = () => {
             </div>
           </div>
         </h1>
-
       </div>
-      <div className="scrollDown">
+      <div className="scrollDown mt-10">
         <a href="#project" className="flex items-center flex-col">
           <span>Scroll down</span>
           <MdKeyboardDoubleArrowDown />

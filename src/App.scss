@@ -64,6 +64,13 @@ span {
   font-size: 10px;
 }
 
+nav{
+  span {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
 #myText {
   line-height: 4.5rem;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);

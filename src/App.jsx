@@ -17,19 +17,24 @@ function App() {
   }, 4000);
 
   const app = document.querySelector(".App");
+  
   useEffect(() => {
     if (app) {
       const scroll = new LocomotiveScroll({
-        el: document.querySelector(".App"),
-        smooth: true,
-        class : "is-reveal"
-      });
+          el: document.querySelector("[data-scroll-container]"),
+          smooth: true,
+        });
     }
   });
-  
-  if (isLoading) {
-    return <Loader />;
-  }
+
+  // const scroll = new LocomotiveScroll({
+  //   el: document.querySelector("[data-scroll-container]"),
+  //   smooth: true,
+  // });
+
+  // if (isLoading) {
+  //   return <Loader />;
+  // }
 
   return (
     <div data-scroll-container className="App">
