@@ -43,7 +43,7 @@ function App() {
         <Project />
         <Contribution />
         <Certification />
-        <PreFooter />
+        {/* <PreFooter /> */}
       </Layout>
     </div>
   );

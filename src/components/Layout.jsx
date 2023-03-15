@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   // max-w-[1200px]
   
   return (
-    <div className="w-[95%] mx-auto">
+    <div className="w-[90%] mx-auto">
       <Nav />
       {children}
       <Footer />

@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
 body {
   background-color: #111111;
-  font-family: "paragraph";
+  // font-family: "paragraph";
+  font-family: 'Roboto', sans-serif;
   color: #777;
 }
+
 
 .front,
 .end,
@@ -18,7 +22,7 @@ body {
 
 @font-face {
   font-family: "paragraph";
-  src: url("./assets/fonts/Fonts/OpenSauceOne-Medium.ttf");
+  src: 'Roboto', sans-serif;
 }
 
 * {
@@ -178,9 +182,9 @@ html {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  background: linear-gradient(#777, #ffffff 50%, #0f0f0f 50%, #ffffff);
+  background: linear-gradient(#777, #ffffff 50%, #5e5e5e 50%, #ffffff);
   background-size: 100% 200%;
-  background-position: 100% 100%;
+  background-position:100% 100%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

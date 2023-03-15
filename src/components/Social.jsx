@@ -3,7 +3,7 @@ import React from "react";
 const Social = ({ visible }) => {
   return (
     <div
-      className={`${visible} flex-wrap gap-5 max-w-[200px] mb-5 md:flex md:max-w-full`}
+      className={`${visible} flex flex-wrap gap-5`}
     >
       <a href="https://mobile.twitter.com/Abdoyobos">
         <button className="py-1 px-3 border border-[#777777] rounded-[44px] uppercase">
