@@ -60,14 +60,13 @@ const Header = () => {
             >
               <p className="about text-[#aaa] font-medium text-sm md:leading-[1.5em] md:text-lg lg:text-lg">
                 <span className="text-[#777] mr-2 uppercase">About </span>Hi,
-                I'm Abdulsalam Mohammed, a front-end engineer
-                writing clean and reusable code using the latest tools. <br />{" "}
+                I'm Abdulsalam Mohammed, a front-end engineer experienced in
+                writing clean and reusable code with the latest tools. <br />{" "}
                 My career goal is to develop processes and software tools that
                 can improve service delivery and product quality.
                 <br />
                 <br />
-                Tools : Html, Css | Scss | Tailwind | Styled component,
-                Javascript, React.js, Next.js, Typescript.
+                Tools : React.js, Next.js, Javascript, Typescript, Css | Scss | Tailwind | Styled component, Html.
               </p>
             </div>
           </div>
