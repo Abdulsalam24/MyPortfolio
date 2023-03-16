@@ -91,14 +91,16 @@ nav{
 }
 
 .parentline {
+  padding-left: 5px;
   overflow: hidden;
 }
 
-nav .nav span,
-nav .nav .btn-contact {
-  opacity: 0;
-  transform: translate(0px, -400px);
-}
+// nav .nav span,
+// nav .nav a {
+//   // opacity: 0;
+//   outline: solid red;
+//   transform: translate(0px, -400px);
+// }
 
 button {
   &:hover {

@@ -30,14 +30,14 @@ const Header = () => {
   return (
     <header data-scroll-section className="mb-40 md:mb-0">
       <div>
-        <h1 className="text-[30vw] md:text-[25vw] tracking-tighter capitalize break-words leading-[0.85em] mt-20 md:mt-2">
+        <h1 className="text-[26vw] md:text-[25vw] tracking-tighter capitalize break-words leading-[0.85em] mt-20 md:mt-2">
           <div className="parentline flex flex-wrap items-center gap-0 justify-between ">
             <p id="header-text" className="front">
               front
             </p>
             <p
               id="header-text"
-              className="dash md:mr-10 p-0 tracking-[-0.20em] front"
+              className="dash mr-10 md:mr-10 p-0 tracking-[-0.50em] md:tracking-[-0.20em] front"
             >
               ——
             </p>
@@ -47,12 +47,12 @@ const Header = () => {
           </div>
 
           <div className="parentline flex flex-col gap-10 md:items-center md:justify-between md:gap-5">
-            <parent
+            <div
               id="header-text"
               className="dev tracking-tighter capitalize break-words text-[26vw] sm:text-[20vw]"
             >
-              developer
-            </parent>
+              engineer
+            </div>
 
             <div
               className="text-base text-left tracking-normal pl-10 max-w-[400px] ml-auto md:ml-0 md:pl-0 md:max-w-[550px] md:text-center"
@@ -60,7 +60,7 @@ const Header = () => {
             >
               <p className="about text-[#aaa] font-medium text-sm md:leading-[1.5em] md:text-lg lg:text-lg">
                 <span className="text-[#777] mr-2 uppercase">About </span>Hi,
-                I'm Abdulsalam Mohammed, a front-end developer skilled in
+                I'm Abdulsalam Mohammed, a front-end engineer
                 writing clean and reusable code using the latest tools. <br />{" "}
                 My career goal is to develop processes and software tools that
                 can improve service delivery and product quality.
