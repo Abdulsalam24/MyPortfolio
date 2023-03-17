@@ -25,12 +25,15 @@ function App() {
           smooth: true,
         });
     }
+    
   });
+
 
   // const scroll = new LocomotiveScroll({
   //   el: document.querySelector("[data-scroll-container]"),
   //   smooth: true,
   // });
+
 
   // if (isLoading) {
   //   return <Loader />;
