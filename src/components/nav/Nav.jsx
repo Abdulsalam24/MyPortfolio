@@ -2,7 +2,7 @@ import { gsap, Power3 } from "gsap";
 import { useEffect, useRef } from "react";
 import { useIntersection } from "react-use";
 import Button from "../Button";
-import cv from "./Abdulsalam resume.pdf";
+import cv from "./Abdulsalam Resume.pdf";
 import { AiOutlineMenu } from "react-icons/ai";
 
 const Nav = () => {
