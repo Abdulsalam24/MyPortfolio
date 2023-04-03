@@ -5,8 +5,7 @@ export const projectData = [
     title: "Movie App",
     tools: "React, scss, Html",
     link: "https://movieappabd.netlify.app/",
-  }
-  ,
+  },
   {
     id: 4,
     description: "Shoppy",

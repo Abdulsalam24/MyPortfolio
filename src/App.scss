@@ -217,3 +217,18 @@ html {
     }
   }
 }
+
+.about{
+  display: unset;
+}
+
+.tools{
+  display: flex !important;
+  svg{
+    color: rgb(194, 194, 194);
+  }
+  >div{
+  display: flex !important;
+
+  }
+}

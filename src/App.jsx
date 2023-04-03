@@ -17,23 +17,20 @@ function App() {
   }, 4000);
 
   const app = document.querySelector(".App");
-  
-  useEffect(() => {
-    if (app) {
-      const scroll = new LocomotiveScroll({
-          el: document.querySelector("[data-scroll-container]"),
-          smooth: true,
-        });
-    }
-    
-  });
 
+  // useEffect(() => {
+  //   if (app) {
+  //     const scroll = new LocomotiveScroll({
+  //         el: document.querySelector("[data-scroll-container]"),
+  //         smooth: true,
+  //       });
+  //   }
+  // });
 
   // const scroll = new LocomotiveScroll({
   //   el: document.querySelector("[data-scroll-container]"),
   //   smooth: true,
   // });
-
 
   // if (isLoading) {
   //   return <Loader />;
