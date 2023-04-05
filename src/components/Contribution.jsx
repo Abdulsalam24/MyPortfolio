@@ -37,11 +37,11 @@ const Contribution = () => {
     : fadeIn(sectionRef.current);
 
   return (
-    <section data-scroll-section className="max-w-lg mx-auto md:text-center">
+    <section data-scroll-section className="max-w-lg mb-32 mx-auto md:text-center">
       <div ref={sectionRef} className="pt-24 pb-16 relative top-[60px]">
         <h4 className="text-[12px]">COMMUNITY CONTRIBUTIONS</h4>
 
-        <p className="text-3xl text-[#aaa] md:mt-5">
+        <p className="text-3xl text-[#aaa] md:mt-5 md:text-3xl">
           I participated in a hackathon competition to solve government
           problems. My team and I worked on, and are still working on, a tracking correspondence software for school records.<br /> I also
           worked as a freelancer with a team to create a product selling

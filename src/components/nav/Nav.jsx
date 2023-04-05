@@ -26,12 +26,11 @@ const Nav = () => {
 
   return (
     <nav data-scroll-section>
-      <div className="nav py-3 font-medium w-full flex flex-col gap-3 md:flex-row md:justify-between md:text-xl md:pt-3 md:pb-5">
+      <div className="nav py-3 font-medium w-full flex flex-col gap-3 md:flex-row md:justify-between  md:pt-3 md:pb-5">
         <div className="text-[#aaa] w-full flex justify-between items-center">
-          <span ref={logo} className="translate-x-0 translate-y-[-200px]">
+          <span ref={logo} className="text-sm sm:text-base md:text-xl translate-x-0 translate-y-[-200px]">
             ABDULSALAM <br /> MOHAMMED
           </span>
-
           <div
             className="btn flex gap-3"
           >
@@ -40,7 +39,6 @@ const Nav = () => {
                 <Button text="resume" />
               </a>
             </div>
-
             <div>
               <a href="#contact" ref={contact} className="translate-x-0 translate-y-[-200px]">
                 <Button text="contact"/>
@@ -48,7 +46,6 @@ const Nav = () => {
             </div>
           </div>
         </div>
-
       </div>
     </nav>
   );

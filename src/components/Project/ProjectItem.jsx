@@ -64,19 +64,19 @@ const ProjectItem = ({ project, projectLength }) => {
                 className="text-[9.2vw] leading-[1.2em] break-words tracking-[-0.05em] md:break-normal md:whitespace-nowrap textwrapper"
                 id="projectName"
               >
-
                 {project.title} - {project.description}
-              
               </h3>
               <div className="text-right mt-5">
-                <a href={project.link} className="text-right pointer-events-auto"    target="_blank"
-            rel="noreferrer">
-                  
-                  <button className="py-2 px-3 border border-[#777777] rounded-[44px] uppercase md:hidden">
-                    <span className="text-base ">visit site</span>{" "}
+                <a
+                  href={project.link}
+                  className="text-right pointer-events-auto"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="py-1 px-2 border border-[#777777] rounded-[10px] hover:rounded-[44px] uppercase md:hidden">
+                    <span className="text-sm">visit site</span>
                     <BsArrowUpRight className="inline" />
                   </button>
-
                 </a>
               </div>
             </div>

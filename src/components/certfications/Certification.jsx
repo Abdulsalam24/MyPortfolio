@@ -40,13 +40,17 @@ const Certification = () => {
     : fadeIn(sectionRef.current);
 
   return (
-    <section data-scroll-section className="max-w-md my-10 mb-[100px]" ref={sectionRef}>
-      <h2 className="text-[12px] mb-5">
-        Certificate / <br /> Award
+    <section
+      data-scroll-section
+      className="text-base max-w-md my-10 mb-[100px]"
+      ref={sectionRef}
+    >
+      <h2 className=" mb-5">
+        Certificate
       </h2>
 
       <div className="flex flex-col border border-x-0 border-y-[#414141]">
-        {certificateData.map((certificate , i) => (
+        {certificateData.map((certificate, i) => (
           <CertificateItem
             key={i}
             certificate={certificate}

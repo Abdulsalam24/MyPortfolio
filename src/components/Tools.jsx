@@ -14,7 +14,7 @@ const Tools = () => {
   return (
     <div className="flex flex-col items-center" id="project">
       <p>Tools :</p>
-      <div className="tools my-5 max-w-sm mx-auto flex flex-wrap gap-10 gap-y-3 justify-center items-center text-xl">
+      <div className="tools my-5 max-w-lg mx-auto flex flex-wrap gap-10 gap-y-3 justify-center items-center text-xl md:gap-14">
         <div className="flex text-lg flex-col items-center">
           <FaReact />
           <span>React.js</span>
