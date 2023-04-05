@@ -79,6 +79,7 @@ const Header = () => {
                 <div className="flex flex-col items-center">
                   <SiNextdotjs />
                   <span>Next.js</span>
+                  
                 </div>
                 <div className="flex flex-col items-center">
                   <SiJavascript />
