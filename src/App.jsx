@@ -8,6 +8,7 @@ import PreFooter from "./components/PreFooter";
 import Project from "./components/Project/Project";
 import Loader from "./components/Loader";
 import LocomotiveScroll from "locomotive-scroll";
+import Tools from "./components/Tools";
 
 function App() {
   const [isLoading, setisLoading] = useState(true);
@@ -40,6 +41,7 @@ function App() {
     <div data-scroll-container className="App">
       <Layout className="App-inner">
         <Header />
+        <Tools/>
         <Project />
         <Contribution />
         <Certification />

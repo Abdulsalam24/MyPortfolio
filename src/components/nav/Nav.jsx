@@ -24,8 +24,6 @@ const Nav = () => {
     });
   }, []);
 
-
-
   return (
     <nav data-scroll-section>
       <div className="nav py-3 font-medium w-full flex flex-col gap-3 md:flex-row md:justify-between md:text-xl md:pt-3 md:pb-5">
