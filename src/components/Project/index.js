@@ -29,9 +29,9 @@ export const projectData = [
   },
   {
     id: 5,
-    description: "GPT3",
+    description: "Talent pro",
     title: "UI",
     tools: "React Tailwind Html",
-    link: "https://gpt-3-abd.vercel.app",
+    link: "https://talentpro-task.vercel.app/",
   },
 ];
